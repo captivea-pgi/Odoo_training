@@ -24,22 +24,22 @@ class CapMailMessage(models.Model):
         message = super(CapMailMessage, self).create(values)
         
         if message.model in models_to_check and message.message_type == 'email':
-            _logger.infor("We are in the if")
+            _logger.info("We are in the if")
             # check if all variables are True (we need these variable along the code)
             # check_variables = all([message.author_id, message.author_id, message.res_id, message.model])
             # if check_variables:
             
             #Link between the helpdesk.ticket model and the message's id
             linked_object = self.env[message.model].sudo().search([('id', '=', message.res_id)])
-            _logger.infor("The link objet is = %s" % linked_object)
+            _logger.info("The link objet is = %s" % linked_object)
                 
             #check which team is linked to the ticket
             equipe = linked_object.team_id
-            _logger.infor("The equipe is = %s" % equipe)
+            _logger.info("The equipe is = %s" % equipe)
             
             #look for the min stage id for the group
             etape=min(self.env['helpdesk.stage'].sudo().search([('team_ids', 'in', equipe.id)]))
-            _logger.infor("The etape is = %s" % etape)
+            _logger.info("The etape is = %s" % etape)
 
             #same as linked_object = stage_id
             linked_object.write({'stage_id': etape.id})
