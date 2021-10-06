@@ -1,0 +1,81 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* cap_mail
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-26 15:17+0000\n"
+"PO-Revision-Date: 2020-03-26 15:17+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: cap_mail
+#: model:ir.model,name:cap_mail.model_mail_activity_type
+msgid "Activity Type"
+msgstr "Type d'activité"
+
+#. module: cap_mail
+#: selection:mail.activity.type,category:0
+msgid "Appel"
+msgstr ""
+
+#. module: cap_mail
+#: code:addons/cap_mail/models/mail_activity.py:33
+#, python-format
+msgid "Call"
+msgstr "Appel"
+
+#. module: cap_mail
+#: model:ir.model.fields,help:cap_mail.field_mail_activity_type__category
+msgid "Categories may trigger specific behavior like opening calendar view"
+msgstr "Les catégories peuvent déclencher un comportement spécifique, tel que l'ouverture d'une vue calendrier"
+
+#. module: cap_mail
+#: model:ir.model.fields,field_description:cap_mail.field_mail_activity_type__category
+msgid "Category"
+msgstr "Catégorie"
+
+#. module: cap_mail
+#: code:addons/cap_mail/models/mail_activity.py:33
+#, python-format
+msgid "Internal"
+msgstr ""
+
+#. module: cap_mail
+#: selection:mail.activity.type,category:0
+msgid "Interne"
+msgstr ""
+
+#. module: cap_mail
+#: selection:mail.activity.type,category:0
+msgid "Meeting"
+msgstr "Rendez-vous"
+
+#. module: cap_mail
+#: selection:mail.activity.type,category:0
+msgid "Other"
+msgstr "Autre"
+
+#. module: cap_mail
+#: code:addons/cap_mail/models/mail_activity.py:33
+#, python-format
+msgid "Project"
+msgstr ""
+
+#. module: cap_mail
+#: selection:mail.activity.type,category:0
+msgid "Projet"
+msgstr ""
+
+#. module: cap_mail
+#: code:addons/cap_mail/models/mail_message.py:37
+#: code:addons/cap_mail/models/mail_message.py:47
+#, python-format
+msgid "You receive a client mail"
+msgstr "Vous avez un message du client"
